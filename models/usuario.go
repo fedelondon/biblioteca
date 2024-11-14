@@ -10,4 +10,7 @@ type Usuario struct {
 	Address        string `json:"address"`
 	Phone          int    `json:"phone"`
 	Identification string `json:"identification" gorm:"not null; unique"`
+	Email          string `json:"email" gorm:"not null; unique"`
+	Password       string `json:"password"`
+	Role           string `json:"role"`
 }
